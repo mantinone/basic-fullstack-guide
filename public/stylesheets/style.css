@@ -1,8 +1,29 @@
 body {
   padding: 50px;
+  background-color: #D4C8C3;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #C22032;
+}
+
+.navbar{
+  background-color: #493235;
+  width: 100%;
+  padding: 10px 20px;
+  color: #EBE9ED;
+}
+
+.thumbnail{
+  background-color: #AC8C78;
+  padding: 6px 12px;
+  margin: 7px;
+  border-radius: 3px;
+  display: inline-block
+}
+
+.flexParent{
+  display: flex;
+  flex-direction: row;
 }
