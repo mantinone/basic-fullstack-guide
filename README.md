@@ -17,4 +17,5 @@ and go to localhost 3000 to see a basic website.
 
 ```
 npm install -S pg-promise
-``` To install PG-promise and save it to our package.json so you don't have to install it yourself!
+``` 
+To install PG-promise and save it to our package.json so you don't have to install it yourself!
