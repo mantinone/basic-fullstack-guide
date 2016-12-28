@@ -19,3 +19,12 @@ and go to localhost 3000 to see a basic website.
 npm install -S pg-promise
 ``` 
 To install PG-promise and save it to our package.json so you don't have to install it yourself!
+
+All you  have to do, though, is clone the repo, npm install, and run the DB files.
+
+```
+createdb fullstack-example
+psql fullstack-example -f schema.sql
+psql fullstack-example -f seed.sql
+```
+You need to tell psql which database to act on.  The -f tells it that the following is a file you wish to execute.
