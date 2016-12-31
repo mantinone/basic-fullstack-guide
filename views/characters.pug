@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p  #{description}
+
+  .flexParent
+    for character in partyArray
+      .thumbnail
+        p  #{character.name}
+        p Who is a #{character.species} #{character.job}
+
+
+
+  //This file expects to receive an object containing an array!
+  //It uses a for-in loop to access each item in partyArray
+  //Our object does not need title or description - pug will just leave them out if they're not there.
+  //It will throw an error without partyArray, though.  It doesn't like trying to loop over something unloopable.
