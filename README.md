@@ -28,3 +28,9 @@ psql fullstack-example -f schema.sql
 psql fullstack-example -f seed.sql
 ```
 You need to tell psql which database to act on.  The -f tells it that the following is a file you wish to execute.
+
+Now you should be ready to run npm start and go to localhost:3000 to see the webpage!
+
+##Displaying webpages with JS variables.
+
+The first step to understanding how to work with the backend is to understand how a webpage can work with JSON objects.  Check out './routes/hardCoded.js' to see our routes and the objects we're using.  The routes in that file call the pug files './views/hardCoded.pug' and './views/characters.pug'
