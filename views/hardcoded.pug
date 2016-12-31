@@ -1,0 +1,11 @@
+extends layout
+
+
+block content
+  h1= title
+  p  Description: #{description}
+
+
+  //This file expects to receive an object containing two properties, 'title' and 'description'.
+  //Since the h1 tag uses an equals sign, we can use the property name directly.
+  //Since the p tag uses a string, we have to put #{} around the property name.
