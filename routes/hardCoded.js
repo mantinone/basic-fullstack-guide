@@ -33,13 +33,13 @@ const adventureParty = {
 
 //App.js receives the 'hardCoded' prefix, so this route is called when we enter
 //'localhost:3000/hardCoded' as our url
-router.get('/', function(request, response, next) {
+router.get('/', function( request, response ) {
   //We're going to render './views/hardcoded', and we'll render it with displayObject.
   response.render('hardcoded', displayObject);
 });
 
 // 'localhost:3000/hardCoded/newtitle'
-router.get('/newTitle', function(request, response, next) {
+router.get('/newTitle', function( request, response ) {
   //We can change an object before displaying it!
   displayObject.title = 'Value Edited!'
   displayObject.description = 'These values are now changed for the whole site.'
@@ -47,7 +47,7 @@ router.get('/newTitle', function(request, response, next) {
   response.render('hardcoded', displayObject);
 })
 
-router.get('/safeEdit', function(request, response, next) {
+router.get('/safeEdit', function( request, response ) {
   //This time we'll first create a new object based on displayObject
   let safeObject = Object.create(displayObject)
   safeObject.title = 'Non-destructive Editing!'
@@ -57,7 +57,7 @@ router.get('/safeEdit', function(request, response, next) {
 })
 
 // 'localhost:3000/hardCoded/adventure'  This route uses an object with an array so that we can see how to display an arbitrary number of items.
-router.get('/adventure', function(request, response, next) {
+router.get('/adventure', function( request, response ) {
   response.render('characters', adventureParty);
 })
 
@@ -66,24 +66,24 @@ router.get('/adventure', function(request, response, next) {
 
 
 //The below routes all use the same logic as the above, but they uses response.send() instead of response.render().  This simply renders a JSON object to the screen.  Tack '/json' onto the end of any of the urls in this file to call these routes and see the object that the page is working with.
-router.get('/json', function(request, response, next) {
+router.get('/json', function( request, response ) {
   response.send(displayObject)
 })
 
-router.get('/newTitle', function(request, response, next) {
+router.get('/newTitle', function( request, response ) {
   displayObject.title = 'Value Edited!'
   displayObject.description = 'These values are now changed for the whole site.'
   response.send(displayObject);
 })
 
-router.get('/safeEdit', function(request, response, next) {
+router.get('/safeEdit', function( request, response ) {
   let safeObject = Object.create(displayObject)
   safeObject.title = 'Non-destructive Editing!'
   safeObject.description =   'Now when we edit safeObject.title, displayObject remains unchanged.'
   response.send(safeObject);
 })
 
-router.get('/adventure/json', function(request, response, next) {
+router.get('/adventure/json', function( request, response ) {
   response.send(adventureParty);
 })
 
