@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= 'Famous Works of Art'
+
+  .flexParent
+    for art in artwork
+      .thumbnail
+        h3  #{art.name}
+        img(src='#{art.image_url}', height='200', width='200')
+
+
+  //This file expects to receive an object containing an array!
+  //We've made sure that array will be named 'artwork'
+  //'art' is our arbitrary name for individual items in the array.
