@@ -20,6 +20,8 @@ npm install -S pg-promise
 ``` 
 To install PG-promise and save it to our package.json so you don't have to install it yourself!
 
+## Setup
+
 All you  have to do, though, is clone the repo, npm install, and run the DB files.
 
 ```
@@ -34,3 +36,10 @@ Now you should be ready to run npm start and go to localhost:3000 to see the web
 ##Displaying webpages with JS variables.
 
 The first step to understanding how to work with the backend is to understand how a webpage can work with JSON objects.  Check out './routes/hardCoded.js' to see our routes and the objects we're using.  The routes in that file call the pug files './views/hardCoded.pug' and './views/characters.pug'
+
+# One
+## Two
+### Three
+#### Four
+##### Five
+###### Six
