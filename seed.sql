@@ -1,18 +1,19 @@
 INSERT INTO artwork (name, description, image_url, artist)
   VALUES ('Mona Lisa', 'The famous painting with the mysterous half-smile', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg/687px-Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg',1);
 INSERT INTO artwork (name, description, image_url, artist)
+  VALUES ('Starry Night', 'One of Vincent van Goghs most famous works.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg', 3);
+INSERT INTO artwork (name, description, image_url, artist)
   VALUES ('The Great Wave of Kanegawa', 'This woodblock print has become emblamatic of Japan.', 'http://images.mentalfloss.com/sites/default/files/styles/article_640x430/public/4hjh3kj634.png', 2);
 INSERT INTO artwork (name, description, image_url, artist)
-  VALUES ('Starry Night', 'One of Vincent van Gogh\'s most famous works.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg', 3;
+  VALUES ('The Thinker', 'This nude male figure brooding with chin on hand is often used as a symbol of philosophy.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/The_Thinker,_Rodin.jpg/260px-The_Thinker,_Rodin.jpg', 4);
 INSERT INTO artwork (name, description, image_url, artist)
-  VALUES ('The Thinker', 'This nude male figure brooding with chin on hand is often used as a symbol of philosophy.', 'http://media.nga.gov/public/objects/1/0/0/5/1005-alternate-1-440x400.jpg', 4;
+  VALUES ('Rams Head White Hollyhock and Little Hills', 'This painting is cool and has a description.', 'http://cdn-b.ndlap3.seria.net/sites/default/files/imagecache/Hovedspalte/images/Ram_s_Head.jpg', 5);
 INSERT INTO artwork (name, description, image_url, artist)
-  VALUES ('Ram\'s Head White Hollyhock and Little Hills', 'This painting is cool and has a description.', "https://upload.wikimedia.org/wikipedia/en/f/f8/O'Keeffe_Georgia_Ram's_Head.jpg", 5;
+  VALUES ('Woman with Bird', 'This print is cool and has a description.', 'http://www.artnet.com/WebServices/images/ll01078lldSETGFgDVECfDrCWvaHBOcZFPC/kiki-smith-ohne-titel-(woman-with-bird).jpg', 6);
 INSERT INTO artwork (name, description, image_url, artist)
-  VALUES ('Woman with Bird', 'This painting is cool and has a description.', "https://upload.wikimedia.org/wikipedia/en/f/f8/O'Keeffe_Georgia_Ram's_Head.jpg", 6;
+  VALUES ('Red Mt. Fuji at Dawn', 'This painting is cool and has a description.', 'http://www.ukiyoe-gallery.com/ukiyoe/fuji-fake-title.jpg', 2);
 
 
-https://aintnohothouseflower.files.wordpress.com/2013/03/womanwithbird.jpg
 
 INSERT INTO artists (name, description, image_url)
   VALUES ('Leonardo daVinci', 'Artist and Engineer from the Italian Renaissance.  Renowned for his great paintings and ingenious inventions', 'https://upload.wikimedia.org/wikipedia/commons/9/9e/Possible_Self-Portrait_of_Leonardo_da_Vinci.jpg');
@@ -23,9 +24,9 @@ INSERT INTO artists (name, description, image_url)
 INSERT INTO artists (name, description, image_url)
   VALUES ('Auguste Rodin', 'A famed French sculptor noted for his ability to model complex surfaces in clay.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Rodin-cropped.png/220px-Rodin-cropped.png');
 INSERT INTO artists (name, description, image_url)
-  VALUES ('Georgia O\'Keefe', 'An American modernist painter most famous for her paintings of flowers and New Mexico landscapes.', "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Georgia_O'Keeffe.jpg/210px-Georgia_O'Keeffe.jpg");
+  VALUES ('Georgia O Keefe', 'An American modernist painter most famous for her paintings of flowers and New Mexico landscapes.', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Georgia_O'Keeffe.jpg/210px-Georgia_O'Keeffe.jpg');
 INSERT INTO artists (name, description, image_url)
-  VALUES ('Kiki Smith', 'An American artist whose work has addressed the themes of sex, birth and regeneration.', "https://s-media-cache-ak0.pinimg.com/originals/80/08/0d/80080d55f7f50d708932b465128f498d.jpg");
+  VALUES ('Kiki Smith', 'An American artist whose work has addressed the themes of sex, birth and regeneration.', 'https://s-media-cache-ak0.pinimg.com/originals/80/08/0d/80080d55f7f50d708932b465128f498d.jpg');
 
 
 
@@ -49,6 +50,8 @@ INSERT INTO artwork_media (artwork_id, media_id)
 INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 2, 3 );
 INSERT INTO artwork_media (artwork_id, media_id)
+  VALUES ( 2, 5 );
+INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 3, 1 );
 INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 3, 2 );
@@ -60,3 +63,7 @@ INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 4, 4 );
 INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 6, 5 );
+INSERT INTO artwork_media (artwork_id, media_id)
+  VALUES ( 7, 3 );
+INSERT INTO artwork_media (artwork_id, media_id)
+  VALUES ( 7, 5 );
