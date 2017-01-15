@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./bin/www",
+    "db:create": "createdb fullstack-example",
+    "db:delete": "dropdb fullstack-example",
+    "db:seed": "psql fullstack-example -f schema.sql && psql fullstack-example -f seed.sql",
+    "db:reset": "npm run db:delete && npm run db:create && npm run db:seed"
   },
   "dependencies": {
     "body-parser": "~1.15.2",
