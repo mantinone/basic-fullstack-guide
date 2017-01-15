@@ -12,6 +12,8 @@ INSERT INTO artwork (name, description, image_url, artist)
   VALUES ('Woman with Bird', 'This print is cool and has a description.', 'http://www.artnet.com/WebServices/images/ll01078lldSETGFgDVECfDrCWvaHBOcZFPC/kiki-smith-ohne-titel-(woman-with-bird).jpg', 6);
 INSERT INTO artwork (name, description, image_url, artist)
   VALUES ('Red Mt. Fuji at Dawn', 'This painting is cool and has a description.', 'http://www.ukiyoe-gallery.com/ukiyoe/fuji-fake-title.jpg', 2);
+INSERT INTO artwork (name, description, image_url, artist)
+  VALUES ('Café Terrace at Night', 'This painting is cool and has a description.', 'http://www.vangoghgallery.com/es/images/Van-Gogh_New-Template/prints-set3/print-cafe-terrace-on-place-du-forum.jpg', 3);
 
 
 
@@ -67,3 +69,7 @@ INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 7, 3 );
 INSERT INTO artwork_media (artwork_id, media_id)
   VALUES ( 7, 5 );
+INSERT INTO artwork_media (artwork_id, media_id)
+  VALUES ( 8, 1 );
+INSERT INTO artwork_media (artwork_id, media_id)
+  VALUES ( 8, 2 );
