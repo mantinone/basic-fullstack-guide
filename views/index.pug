@@ -6,8 +6,15 @@ block content
 
   .flexParent
     .thumbnail
-      p This is a basic thumbnail.
+      h2 This is a basic thumbnail.
     .thumbnail
-      p This is another one.
+      h3 This is another one.
     .thumbnail
-      p And another one!
+      h4 We'll use these all over the site.
+    .thumbnail
+      h4 Using pug, we can even
+      h4 use loops to make them!
+    div
+      - for (var x = 0; x < 10; x++)
+        .thumbnail
+          h3 x = #{x}
