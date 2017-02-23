@@ -27,7 +27,7 @@ We've also already defined several scripts in **"package.json"**, which we also 
 
 Now you should be ready to run `npm start` to start up your server, then go to the url `localhost:3000` in your web browser to see the webpage!
 
-Our landing page contains an example of using a loop in pug to build your webpage.  Try going to './views/index.pug' and play around with that code to understand how pug works.  Just make your changes, save the file, and refresh the page in your browser.
+Our landing page contains an example of using a loop in pug to build your webpage.  Try going to **"./views/index.pug"** and play around with that code to understand how pug works.  Just make your changes, save the file, and refresh the page in your browser.
 
 ## The Walkthrough
 
