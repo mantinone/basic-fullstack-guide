@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-//All routes in this file will have the prefix "/hardCoded/" on them.  See ./app.js to see how we do this.
+//All routes in this file will have the prefix "/hardCoded/" on them.
+//See ./app.js to see how we do this.
 //We will use express routes and pug to display values from an Object on our webpages.
 
 //First, let's define the hard-coded Objects we'll be using.

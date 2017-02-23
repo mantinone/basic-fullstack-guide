@@ -13,7 +13,8 @@ var dbaccess = require('./routes/dbaccess')
 
 var app = express();
 
-// view engine setup
+// These lines tell express we're using pug, and to look in the views
+// directory for our pug files.
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -25,13 +26,16 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//DEFINING ROUTES STEP 2: These functions tell our program to look at the paths defined above when it receives a certain url.  We can use this to create a "prefix" for our routes.  See ./routes/hardCoded for more info.
+// DEFINING ROUTES STEP 2: These calls to the use() function tell our program to
+// look at the paths defined above when it receives a certain url.
+// We can use this to create a "prefix" for our routes.  See ./routes/hardCoded for more info.
 app.use('/', index);
 app.use('/users', users);
 app.use('/hardCoded', hardCoded);
 app.use('/dbaccess', dbaccess);
 
-// catch 404 and forward to error handler
+// If we ask Express for a route not mentioned above,
+// This statement defaults to 404.
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
