@@ -1,5 +1,5 @@
-# Express-Pug-Postgress basic full-stack guide
-This repo aims to be a helpful guided tour of how to build a basic full-stack web app using Node.js and postgresql.  It assumes you already have a fundamental understanding of javascript and know how to clone a repository from github.
+# Full Stack Guided Tour, with Express, Pug, and Postgresql
+This repo aims to be a helpful guided tour of how to build a basic server-rendered full-stack web app using Node.js and postgresql.  It assumes you already have a fundamental understanding of javascript and know how to clone a repository from github.
 
 This README will help you get setup and take you step by step through the project to highlight different parts of the process and help you understand what's going on.
 
@@ -7,11 +7,11 @@ This README will help you get setup and take you step by step through the projec
 
 This project uses the following packages.
 
-* Pug - Our Templating Engine.  Templating engines allow us to construct html pages at runtime with Javascript commands and variables.
+* Pug - Our Templating Engine.  Templating engines allow us to construct html pages at runtime with Javascript commands and variables.  Another popular Templating Engine is Handlebars.
 * Node - Our Server
 * Express - A framework for interfacting with Node
-* Postgres - for our database
-* SQL and PG Promise - for accessing the database
+* Postgresql - for our database
+* PG-Promise - a JavaScript package for communicating with the database
 
 ## Setup
 
