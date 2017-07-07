@@ -10,8 +10,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-//DEFINING ROUTES STEP 1: These variables define which files our project looks
-//for routes in.
+//STEP 2: If we have more than a couple routes, it's good to write them
+//in separate files.
+//These variables tell Express where those files are.
 var index = require('./routes/index');
 var users = require('./routes/users');
 //--------------My code---------
@@ -21,25 +22,33 @@ var dbaccess = require('./routes/dbaccess')
 
 var app = express();
 
-// These lines tell express we're using pug, and to look in the views
+// SETUP: These lines tell express we're using pug, and to look in the views
 // directory for our pug files.
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// DEFINING ROUTES STEP 2: These calls to the use() function tell our program to
+// STEP 2: These calls to the use() function tell our program to
 // look at the paths defined above when it receives a certain url.
 // We can use this to create a "prefix" for our routes.  See ./routes/hardCoded for more info.
 app.use('/', index);
 app.use('/users', users);
 //------------My Code---------------
+// STEP 1: These two functions are examples of Routes written in our main server file.
+app.get('/example1', (request, response, next) => {
+  response.render('YAY')
+})
+
+app.get('/example2', (request, response, next ) => {
+  response.render('index', {title: "This Route Exists in app.js"})
+})
+
+//STEP 2: These two function calls tell Express to look in other files for our routes.
 app.use('/hardCoded', hardCoded);
 app.use('/dbaccess', dbaccess);
 //-----------------------------------

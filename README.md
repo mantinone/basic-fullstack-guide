@@ -31,7 +31,15 @@ Our landing page contains an example of using a loop in pug to build your webpag
 
 ## The Walkthrough
 
-### Step 1: Displaying webpages with JS variables.
+### Step 1: Using a route to render a page.
+
+In this step, we'll learn a little bit about how to write Express routes, and what a Templating Engine does.  
+
+In Express, a route is a function that responds to a certain url path.  
+
+Pug, our Templating Engine, allows us to write instructions for generating HTML.  
+
+### Step 2: Displaying webpages with JS variables.
 
 Our first step to understanding how to work with the backend is to understand how Express can pass variables to a template.  Let's look at some routes, which are functions that tell our server what to do when it receives certain http requests.
 
